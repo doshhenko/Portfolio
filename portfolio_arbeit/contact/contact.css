@@ -1,0 +1,356 @@
+.snip1135 a {
+  padding: 0.5em 0;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.snip1135 a:before,
+.snip1135 a:after {
+  position: absolute;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.snip1135 a:before {
+  bottom: 0;
+  display: block;
+  height: 1px;
+  width: 0%;
+  content: "";
+  background-color: #CDC1FF;
+}
+.snip1135 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #F5EFFF;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1135 a:hover:before,
+.snip1135 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1135 a:hover:after,
+.snip1135 .current a:after {
+  max-width: 100%;
+}
+
+h1, .icon, .options_menu, .contact_me, .developer, .logo, .myname, .personal, .know_better, h3, form{
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.name, .email, .message{
+  font-family: "Abel", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.mainContent{
+  margin: 0px auto;
+  max-width: 1300px;
+}
+
+.logo_container{
+  margin-top: -50px;
+}
+
+.container_menu, .select_option, .options_menu, .contact_info, .container_icons, .get_in_touch, 
+.container_info, .container_message, .btn_send{
+  display: flex;
+}
+
+.container_menu, .select_option, .get_in_touch{
+  flex-direction: row;
+}
+
+.container_menu {
+  justify-content: space-between;
+  margin-left: 80px;
+}
+
+.options_menu, .refference, .name, .email, .message, .contact_me{
+  font-size: 25px;
+}
+
+.options_menu {
+  margin-right: 30px;
+  margin-top: 20px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.refference, .icon:hover, h1, h3{
+  color: #CDC1FF;
+}
+
+.refference {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.logo{
+  font-size: 90px;
+  background: linear-gradient( 90deg, rgb(110, 186, 241) 0%, rgb(157, 140, 255) 17%, rgb(246, 110, 182) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu_icons {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.icon {
+  margin: 10px;
+  color: #EE66A6;
+}
+
+body {
+  background-color: #000;
+}
+
+.contact_info, .container_icons, .get_in_touch, .btn_send{
+  justify-content: center;
+}
+
+.contact_info, .container_info, .container_message{
+  flex-direction: column;
+}
+
+.contact_info{
+  align-items: center;
+}
+
+h1{
+  font-size: 80px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+.social_media_inst, .social_media_telegramm, .social_media_github, .social_media_whatsapp{
+  width: 50px;
+}
+
+.container_icons{
+  margin-bottom: 5%;
+}
+
+.container_message, h1{
+  margin: auto;
+}
+
+.get_in_touch{
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+
+.container_info, .container_message{
+  color: #EE66A6;
+}
+
+.container_info{
+  padding: 3%;
+}
+
+.input_name, .input_email, .input_message{
+  font-size: 24px;
+}
+
+.name, .email, .message{
+  width: 450px;
+  border-radius: 10px;
+  border: none;
+  background-color: #F5EFFF;
+  border: 3px solid #B7E0FF;
+}
+
+.message{
+  height: 170px;
+}
+
+input, textarea{
+  padding-left: 4%;
+  padding-top: 2%;
+  padding-right: 4%;
+}
+
+.btn_send{
+  margin-top: 4%;
+}
+
+.contact_me{
+  max-width: 280px;
+  height: 80px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid #A594F9;
+  color: #B7E0FF;
+  letter-spacing: 3px;
+}
+
+.contact_me:hover{
+  background: linear-gradient( 90deg, rgb(110, 186, 241) 0%, rgb(157, 140, 255) 17%, rgb(246, 110, 182) 100%);
+  color: #000;
+  transition: 0.5s ease-in;
+}
+
+@media all and (max-width: 1300px) {
+  body {
+      width: 100%;
+  }
+  .container_menu{
+      margin-right: 7%;
+  }
+
+  h1{
+    font-size: 75px;
+  }
+
+  h3{
+    font-size: 30px;
+    text-align: center
+  }
+
+  .contact_me{
+    width: 24%;
+  }
+
+  .get_in_touch{
+    margin-left: -2%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    margin: auto;
+    width: 80vw;
+  }
+
+  .logo{
+    margin-top: 80px;
+    font-size: 70px;
+  }
+  .container_menu {
+    margin-left: -10%;
+  }
+
+  .refference {
+    font-size: 20px;
+  }
+
+  h1{
+    font-size: 65px;
+  }
+
+  .container_message{
+    align-self: center;
+  }
+
+  .message{
+    width: 500px;
+  }
+
+  .contact_me{
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: 60px;
+    padding: 13px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .mainContent {
+    margin: auto;
+  }
+
+  .menu_icons{
+    display: none;
+  }
+
+  .contact_me{
+    font-size: 22px;
+    padding: 4px;
+  }
+}
+
+
+@media all and (max-width: 540px) {
+  .logo {
+    font-size: 60px;
+  }
+  .refference, .input_email, .input_name, .input_message, .name, .email, .message {
+    font-size: 17px;
+  }
+
+  .options_menu{
+    margin-right: -1%;
+  }
+
+  h1{
+    font-size: 35px;
+    margin-top: 5%;
+  }
+
+  h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+
+  .btn_send{
+    margin-left: 7%;
+  }
+
+  .social_media_inst, .social_media_telegramm, .social_media_github, .social_media_whatsapp{
+    width: 40px;
+  }
+
+  .name, .email{
+    width: 200px;
+  }
+
+  .name, .email{
+    height: 40px;
+  }
+
+  .message{
+    height: 100px;
+    width: 230px;
+  }
+
+  .contact_me{
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .logo {
+    font-size: 35px;
+  }
+  .refference {
+    font-size: 12px;
+  }
+
+  .options_menu{
+    margin-left: -3%;
+    padding: 10px;
+  }
+
+  .contact_me{
+    width: 50%;
+    margin-left: -3%;
+    padding: 10px;
+  }
+}

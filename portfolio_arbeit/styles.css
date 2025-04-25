@@ -1,0 +1,297 @@
+.snip1135 a {
+    padding: 0.5em 0;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.snip1135 a:before,
+.snip1135 a:after {
+    position: absolute;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.snip1135 a:before {
+    bottom: 0;
+    display: block;
+    height: 1px;
+    width: 0%;
+    content: "";
+    background-color: #CDC1FF;
+}
+.snip1135 a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #F5EFFF;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.snip1135 a:hover:before,
+.snip1135 .current a:before {
+    opacity: 1;
+    width: 100%;
+}
+.snip1135 a:hover:after,
+.snip1135 .current a:after {
+    max-width: 100%;
+}
+
+
+h1, .icon, .tagcloud, .options_menu, .contact, .developer, .logo{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mainContent,
+.container_menu {
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+.logo_container{
+    margin-top: -50px;
+}
+
+.container_menu, .select_option, .options_menu, .intro, .mybtn, .circle{
+    display: flex;
+}
+
+.container_menu, .select_option{
+    flex-direction: row;
+}
+
+.container_menu {
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.options_menu, .refference, .contact{
+    font-size: 25px;
+}
+
+
+.options_menu, .menu_icons, .intro, .developer{
+    margin-top: 20px;
+}
+
+.options_menu, .intro, .circle{
+    flex-flow: row wrap;
+}
+
+.options_menu {
+    margin-right: 30px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.refference, .icon:hover, h1, .developer{
+    color: #CDC1FF;
+}
+
+.refference {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.logo{
+    font-size: 90px;
+    background: linear-gradient( 90deg, rgb(110, 186, 241) 0%, rgb(157, 140, 255) 17%, rgb(246, 110, 182) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.menu_icons {
+    list-style-type: none;
+}
+
+.icon {
+    margin: 10px;
+    color: #EE66A6;
+}
+
+
+body {
+    background-color: #000;
+}
+
+.intro{
+    flex-wrap: wrap;
+}
+
+.myname, body{
+    margin: auto;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.developer{
+    font-size: 30px;
+}
+
+.mybtn{
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact{
+    width: 280px;
+    height: 80px;
+    border-radius: 15px;
+    padding: 5px;    
+    margin-top: 60px;
+    background-color: transparent;
+    border: #A594F9 2px solid;
+    color: #B7E0FF;
+}
+
+.contact:hover{
+    background: linear-gradient( 90deg, rgb(110, 186, 241) 0%, rgb(157, 140, 255) 17%, rgb(246, 110, 182) 100%);
+    color: #000;
+    transition: 0.5s ease-in;
+}
+
+.circle{
+    margin-top: -90px;
+}
+
+.tagcloud {
+    display: inline-block;
+    top: 100px;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.tagcloud--item:hover {
+    color: #F5EFFF;
+}
+
+.photo-of-me{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+@media all and (max-width: 1300px) {
+    body {
+        width: 100%;
+    }
+    .container_menu{
+        margin-right: 7%;
+    }
+    .circle{
+        margin: auto;
+        margin-top: -12%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        margin: auto;
+        width: 80vw;
+    }
+    .logo{
+        margin-top: 80px;
+        font-size: 70px;
+    }
+    .container_menu {
+        margin-left: -10%;
+    }
+
+    .refference {
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .developer{
+        font-size: 25px;
+        margin-top: -2%;
+    }
+
+    .contact{
+        width: 180px;
+        height: 50px;
+        padding: 5px;
+        font-size: 17px;
+        margin-top: 10%;
+    }
+    .intro{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .mainContent {
+        margin: auto;
+    }
+
+    .menu_icons{
+        display: none;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .logo {
+        font-size: 60px;
+    }
+
+    .refference {
+        font-size: 17px;
+    }
+
+    .options_menu{
+        margin-right: -1%;
+    }
+
+    .photo-of-me{
+        display: block;
+        display: flex;
+    }
+
+    .selfie{
+        border-radius: 10px;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .logo {
+        font-size: 35px;
+    }
+    .refference {
+        font-size: 12px;
+    }
+
+    .options_menu{
+    margin-left: -3%;
+    padding: 10px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .developer{
+        font-size: 20px;
+    }
+    .tagcloud {
+        display: none;
+    }
+}
+
+@media all and (max-width: 360px) {
+    h1{
+        font-size: 30px;
+    }
+}

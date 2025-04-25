@@ -1,0 +1,268 @@
+
+  .snip1135 a {
+    padding: 0.5em 0;
+    position: relative;
+    letter-spacing: 1px;
+  }
+
+  .snip1135 a:before,
+  .snip1135 a:after {
+    position: absolute;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+
+  .snip1135 a:before {
+    bottom: 0;
+    display: block;
+    height: 1px;
+    width: 0%;
+    content: "";
+    background-color: #CDC1FF;
+  }
+  .snip1135 a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #F5EFFF;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+  }
+  .snip1135 a:hover:before,
+  .snip1135 .current a:before {
+    opacity: 1;
+    width: 100%;
+  }
+  .snip1135 a:hover:after,
+  .snip1135 .current a:after {
+    max-width: 100%;
+  }
+
+
+h1, .icon, .options_menu, .contact, .developer, .logo, .myname, .discription{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.mainContent{
+    margin: 0px auto;
+    max-width: 1300px;
+}
+
+.logo_container{
+    margin-top: -50px;
+}
+
+.container_menu, .select_option, .options_menu, .knowledge, .bund, .heading, .hard_skills {
+  display: flex;
+}
+
+.container_menu {
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.select_option, .container_menu {
+    flex-direction: row;
+}
+
+.options_menu {
+    font-size: 25px;
+    margin-right: 30px;
+    margin-top: 20px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.refference {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.logo{
+    font-size: 90px;
+    background: linear-gradient( 90deg, rgb(110, 186, 241) 0%, rgb(157, 140, 255) 17%, rgb(246, 110, 182) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.menu_icons {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.icon {
+    margin: 10px;
+    color: #EE66A6;
+}
+
+.icon:hover, .refference {
+    color: #CDC1FF;
+}
+
+body {
+    background-color: #000;
+}
+
+.knowledge {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bund {
+    flex-direction: column;
+    padding: 30px;
+}
+
+.programm {
+    padding: 70px;
+    transition: transform 0.2s;
+}
+
+.programm:hover {
+    transform: scale(1.55);
+}
+
+.discription{
+    color: #EE66A6;
+    font-size: 33px;
+    margin: auto;
+    margin-top: -30px;
+    background-color: black;
+}
+
+span{
+    margin-right: 2px;
+}
+
+.page_bottom{
+  margin-bottom: 50px;
+}
+
+.heading, .hard_skills{
+  justify-content: center;
+}
+
+
+.hard_skills{
+    position: relative;
+    color: #CDC1FF;
+    font-size: 70px;
+    letter-spacing: 6px;
+
+    span{
+      opacity: 0;
+      transform: scale(3);
+      animation: fadeIn 2.4s forwards;
+    }
+    
+    &::before,
+    &::after {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+
+  @media all and (max-width: 1300px) {
+    body {
+        width: 100%;
+    }
+    .container_menu{
+        margin-right: 7%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        margin: auto;
+        width: 80vw;
+    }
+    .logo{
+        margin-top: 80px;
+        font-size: 70px;
+    }
+    .container_menu {
+        margin-left: -10%;
+    }
+    
+    .refference {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .mainContent {
+        margin: auto;
+    }
+
+    .menu_icons{
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 540px) {
+    .logo {
+        font-size: 60px;
+    }
+    .refference {
+        font-size: 17px;
+    }
+
+    .options_menu{
+        margin-right: -1%;
+    }
+    .knowledge{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .heading{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .hard_skills{
+      font-size: 40px;
+    }
+
+    .discription{
+      font-size: 25px;
+    }
+
+    .bund{
+      margin-top: -10%;
+    }
+}
+
+
+@media all and (max-width: 520px) {
+    .logo {
+        font-size: 35px;
+    }
+    .refference {
+        font-size: 12px;
+    }
+
+    .options_menu{
+      margin-left: -3%;
+        padding: 10px;
+    }
+}
+

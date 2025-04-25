@@ -1,0 +1,451 @@
+.snip1135 a {
+    padding: 0.5em 0;
+    position: relative;
+    letter-spacing: 1px;
+  }
+
+  .snip1135 a:before,
+  .snip1135 a:after {
+    position: absolute;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+
+  .snip1135 a:before {
+    bottom: 0;
+    display: block;
+    height: 1px;
+    width: 0%;
+    content: "";
+    background-color: #CDC1FF;
+  }
+  .snip1135 a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #F5EFFF;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+  }
+  .snip1135 a:hover:before,
+  .snip1135 .current a:before {
+    opacity: 1;
+    width: 100%;
+  }
+  .snip1135 a:hover:after,
+  .snip1135 .current a:after {
+    max-width: 100%;
+  }
+
+
+h1, .icon, .options_menu, .contact, .developer, .logo, .myname, .personal, .personal_mobile, .know_better{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.mainContent{
+    margin: 0px auto;
+    max-width: 1300px;
+}
+
+.logo_container{
+    margin-top: -50px;
+}
+
+.container_menu, .select_option, .options_menu, .acquaintance, .myname, .know_better, .fact1, .block, .fact2{
+    display: flex;
+}
+
+.container_menu{
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.select_option, .container_menu, .block{
+    flex-direction: row;
+}
+
+.options_menu{
+    margin-right: 30px;
+    margin-top: 20px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.refference, .options_menu, .description1, .description2{
+    font-size: 25px;
+}
+
+.refference, .icon:hover, h1, .category1, .category2{
+    color: #CDC1FF;
+}
+
+.refference{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.logo{
+    font-size: 90px;
+    background: linear-gradient( 90deg, rgb(110, 186, 241) 0%, rgb(157, 140, 255) 17%, rgb(246, 110, 182) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.menu_icons {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.icon {
+    margin: 10px;
+    color: #EE66A6;
+}
+
+body, .end {
+    background-color: #000;
+}
+
+.myname, .fact1, .fact2{
+    flex-direction: column;
+}
+.selfie{
+    border-radius: 10px;
+    width: 400px;
+}
+
+.selfie:hover {
+    opacity: 1;
+}
+
+h1, .me, .web, .photo-of-me{
+    margin: auto;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.me{
+    color: #E5CFF7;
+    font-size: 30px;
+}
+
+.web{
+    color: #E5D9F2;
+    font-size: 22px;
+    text-align: center;
+}
+
+.br_web, .personal_mobile{
+    display: none;
+}
+
+hr{
+    margin-top: 100px;
+    height: 2px;
+    background-color: #EE66A6;
+    border: none;
+}
+
+.know_better{
+    justify-content: center;
+    font-size: 40px;
+    background: repeating-linear-gradient(#B7E0FF, #B7E0FF 2px, #0000 2px, #0000 3px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.personal{
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.image1{
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+.fact1, .block, .fact2{
+    align-items: center;
+}
+
+.fact1{
+    margin-top: -210px;
+    margin-left: 250px;
+}
+
+.category1, .category2{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.description1, .description2{
+    margin-top: -20px;
+    color: #E5D9F2;
+}
+
+.block{
+    margin-top: 250px;
+}
+
+.fact2{
+    margin-top: -200px;
+    margin-left: 70px;
+}
+
+.image2{
+    margin-left: 100px;
+    margin-top: -150px;
+}
+
+a{
+    display: inline-block;
+}
+
+a:hover img {
+    opacity: 0;
+}
+
+.tennis, .planet, .university, .target{
+    transition: all .3s ease;
+    cursor: default;
+    width: 200px;
+}
+
+.transition_university:hover {
+    background: url("images/school2.png") no-repeat 50% 50%;
+}
+
+.transition_planet:hover{
+    background: url("images/language2.png") no-repeat 50% 50%;
+}
+
+.transition_target:hover{
+    background: url("images/target2.png") no-repeat 50% 50%;
+}
+
+.transition_hobby:hover {
+    background: url("images/table-tennis2.png") no-repeat 50% 50%;
+}
+
+.end{
+    padding: 30px;
+}
+
+@media all and (max-width: 1300px) {
+    body, .web, .me{
+        width: 100%;
+    }
+
+    .container_menu{
+        margin-right: 7%;
+    }
+
+    .selfie{
+        width: 350px;
+    }
+
+    .br_web{
+        display: block;
+    }
+
+    .acquaintance{
+        margin-left: 5%;
+    }
+
+    .web, .me{
+        margin: auto;
+    }
+
+    .me{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        margin: auto;
+        width: 80vw;
+    }
+
+    .logo{
+        margin-top: 80px;
+        font-size: 70px;
+    }
+
+    .container_menu {
+        margin-left: -10%;
+    }
+
+    .refference, .web, .description1, .description2{
+        font-size: 20px;
+    }
+
+    .br_web{
+        display: none;
+    }
+
+    h1{
+        font-size: 60px;
+        margin-bottom: 3%;
+    }
+    .selfie{
+        width: 300px;
+    }
+
+    .me{
+        font-size: 30px;
+        margin-bottom: 2%;
+    }
+
+    .tennis, .planet, .university, .target{
+        width: 150px;
+    }
+
+    .category1, .category2{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 55px;
+    }
+
+    hr{
+        margin-top: 5%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .mainContent {
+        margin: auto;
+    }
+
+    .menu_icons{
+        display: none;
+    }
+
+    .selfie{
+        width: 250px;
+    }
+
+    .acquaintance{
+        margin-left: -2%;
+    }
+
+    h2{
+        font-size: 49px;
+    }
+
+    .personal{
+        margin-left: -10%;
+    }
+}
+
+
+@media all and (max-width: 540px) {
+    .logo{
+        font-size: 60px;
+    }
+
+    .refference, .me{
+        font-size: 17px;
+    }
+
+    .options_menu{
+        margin-right: -1%;
+    }
+
+    .selfie{
+        width: 180px;
+    }
+
+    .acquaintance{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15%;
+        margin-top: 10%;
+    }
+
+    .photo-of-me, .personal{
+        display: none;
+    }
+
+    .personal_mobile{
+        display: block;
+    }
+
+    .fact1{
+        margin-left: 1%;
+    }
+
+    .image1{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .block{
+        margin-top: 50%;
+    }
+
+    .extra_sentence{
+        margin-top: 0.1px;
+    }
+
+    a:hover img {
+        opacity: 1;
+    }
+
+    h2{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 10%;
+        font-size: 33px;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .logo {
+        font-size: 35px;
+    }
+    .refference {
+        font-size: 12px;
+    }
+
+    .options_menu{
+        margin-left: -3%;
+        padding: 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    .me{
+        font-size: 17px;
+    }
+
+    .web{
+        font-size: 13px;
+    }
+
+    .tennis, .planet, .university, .target{
+        width: 100px;
+    }
+
+    .category1, .category2{
+        font-size: 20px;
+    }
+
+    .description1, .description2{
+        font-size: 15px;
+    }
+
+    .personal{
+        margin-left: -16%;
+    }
+}
